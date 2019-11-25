@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <style>
+        td {
+            padding: 10px;
+        }
+
+        table {
+            width: fit-content;
+        }
+
+        body {
+            /* background: url("https://www.foodiesfeed.com/wp-content/uploads/2019/02/messy-pizza-on-a-black-table.jpg"); */
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .btn:hover {
+            background-color: #3e8e41
+        }
+
+        .btn:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        #boxer {
+            background: linear-gradient(to right, #ff4b2bbd, #ff416dbd);
+            border-radius: 80px;
+            margin-top: 20pt;
+        }
+    </style>
+
+    <body>
+
+        <div class="conatiner">
+
+            <div class="col-md-8 col-sm-8 offset-2" id="boxer">
+                <div style="text-align: center">
+                    <h1 style="font-family:Sofia;color: aliceblue;font-size:50pt;">Sign Up</h1>
+                </div>
+                <form class="form-inline" id="register">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 col-sm-10">
+
+                        <table>
+                            <tr>
+                                <td align="right">Name:</td>
+                                <td><input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter your Name" id="name1" name="name" /></td>
+
+                            </tr>
+                            <tr>
+                                <td align="right">User Name:</td>
+                                <td><input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter your User Name" id="uname" name="uname" /></td>
+
+                            </tr>
+                            <tr>
+                                <td align="right">Password:
+                                    <input type="password" class="form-control" style="height:30px"
+                                        placeholder="Enter password" id="password" name="pass" /></td>
+                                <td align="right"> Confirm Password:
+                                    <input type="password" class="form-control" style="height:30px"
+                                        placeholder="Re-enter password" id="cpassword" name="cpass" /></td>
+
+                            </tr>
+                            <tr>
+                                <td align="right">Email:</td>
+                                <td><input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter your Email" id="email1" name="email" /></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Phone :</td>
+                                <td><input type="number" class="form-control" style="height:30px" placeholder="Phone"
+                                        id="phone" name="phone" pattern="/d{10}" data-mismatch="Enter valid phone number" /></td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="vertical-align: baseline; ;">Which Account do you want to
+                                    create?
+                                </td>
+                                <td>
+                                    <input type="radio" name="recom" value="Foodie" />
+                                    Foodie
+                                    <input type="radio" name="recom" value="Cook" />
+                                    Cook
+                                    <input type="radio" name="recom" value="Caterer" />
+                                    Caterer
+                                    <input type="radio" name="recom" value="NGO/Charity" />
+                                    NGO/Charity
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: baseline" align="right">Address Line 1: </td>
+                                <td>
+                                    <input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter Address Line 1" id="add1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: baseline" align="right">Address Line 2: </td>
+                                <td>
+                                    <input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter Address Line 2" id="add2" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: baseline" align="right">Address Line 3: </td>
+                                <td>
+                                    <input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter Address Line 3" id="add3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: baseline;" align="right">City
+
+                                    <select class="form-control" id="FCC" style="background-color: white">
+                                        <option>
+                                            Select a City
+                                        </option>
+                                        <option>
+                                            New Delhi
+                                        </option>
+                                        <option>
+                                            Bangalore
+                                        </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    Zip Code:
+
+                                    <input type="text" class="form-control" style="height:30px"
+                                        placeholder="Enter Zip Code" id="ZipCode" />
+                                </td>
+                            </tr>
+
+                            <tfoot>
+                                <td colspan="2" align="center"><button type="submit" class="btn btn-primary">Lets Get
+                                        Ordering >></button>
+                                </td>
+
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div><br><br>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

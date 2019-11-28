@@ -8,76 +8,104 @@ import org.springframework.data.annotation.Id;
 
 public class Catrer {
 	@Id
-	private String cId;
-	private String cName;
-	private String cEmail;
-	private String cDesc;
-	private String cCity;
-	private String cAddress;
-	private String cPhone;
-	private String cZip;
-	//@DBRef
-	//private List<Foodie> foodie;
-	public Catrer(String cId, String cName, String cEmail, String cDesc, String cCity, String cAddress, String cPhone,
-			String cZip) {
+	private String catererid;
+    private String caterername;
+    private String catererlocation;
+    private String catererpassword;
+    private String catererphone;
+    private String catereraddress;
+    private String caterercity;
+    private String catererzip;
+    private String catereremail;
+    
+	public Catrer() {
 		super();
-		this.cId = cId;
-		this.cName = cName;
-		this.cEmail = cEmail;
-		this.cDesc = cDesc;
-		this.cCity = cCity;
-		this.cAddress = cAddress;
-		this.cPhone = cPhone;
-		this.cZip = cZip;
 	}
-	public String getcId() {
-		return cId;
+
+	public Catrer(String catererid, String caterername, String catererlocation, String catererpassword,
+			String catererphone, String catereraddress, String caterercity, String catererzip, String catereremail) {
+		super();
+		this.catererid = catererid;
+		this.caterername = caterername;
+		this.catererlocation = catererlocation;
+		this.catererpassword = catererpassword;
+		this.catererphone = catererphone;
+		this.catereraddress = catereraddress;
+		this.caterercity = caterercity;
+		this.catererzip = catererzip;
+		this.catereremail = catereremail;
 	}
-	public void setcId(String cId) {
-		this.cId = cId;
+
+	public String getCatererid() {
+		return catererid;
 	}
-	public String getcName() {
-		return cName;
+
+	public void setCatererid(String catererid) {
+		this.catererid = catererid;
 	}
-	public void setcName(String cName) {
-		this.cName = cName;
+
+	public String getCaterername() {
+		return caterername;
 	}
-	public String getcEmail() {
-		return cEmail;
+
+	public void setCaterername(String caterername) {
+		this.caterername = caterername;
 	}
-	public void setcEmail(String cEmail) {
-		this.cEmail = cEmail;
+
+	public String getCatererlocation() {
+		return catererlocation;
 	}
-	public String getcDesc() {
-		return cDesc;
+
+	public void setCatererlocation(String catererlocation) {
+		this.catererlocation = catererlocation;
 	}
-	public void setcDesc(String cDesc) {
-		this.cDesc = cDesc;
+
+	public String getCatererpassword() {
+		return catererpassword;
 	}
-	public String getcCity() {
-		return cCity;
+
+	public void setCatererpassword(String catererpassword) {
+		this.catererpassword = catererpassword;
 	}
-	public void setcCity(String cCity) {
-		this.cCity = cCity;
+
+	public String getCatererphone() {
+		return catererphone;
 	}
-	public String getcAddress() {
-		return cAddress;
+
+	public void setCatererphone(String catererphone) {
+		this.catererphone = catererphone;
 	}
-	public void setcAddress(String cAddress) {
-		this.cAddress = cAddress;
+
+	public String getCatereraddress() {
+		return catereraddress;
 	}
-	public String getcPhone() {
-		return cPhone;
+
+	public void setCatereraddress(String catereraddress) {
+		this.catereraddress = catereraddress;
 	}
-	public void setcPhone(String cPhone) {
-		this.cPhone = cPhone;
+
+	public String getCaterercity() {
+		return caterercity;
 	}
-	public String getcZip() {
-		return cZip;
+
+	public void setCaterercity(String caterercity) {
+		this.caterercity = caterercity;
 	}
-	public void setcZip(String cZip) {
-		this.cZip = cZip;
+
+	public String getCatererzip() {
+		return catererzip;
 	}
-	
+
+	public void setCatererzip(String catererzip) {
+		this.catererzip = catererzip;
+	}
+
+	public String getCatereremail() {
+		return catereremail;
+	}
+
+	public void setCatereremail(String catereremail) {
+		this.catereremail = catereremail;
+	}
 	
 }
